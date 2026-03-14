@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Webpage Censorship",
+  "version": "1.0",
+  "description": "Automatically detects content inappropriate for children and blocks the webpage. Parents of the child are then notified via email.",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
